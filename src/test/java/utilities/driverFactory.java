@@ -20,7 +20,7 @@ static Properties properties;
 	{
 		properties = new Properties();
 		
-		//Change the path to where the global properties included in this project is located
+		//Change the path below to where the global properties included in this project is located
 		io = new FileInputStream("C:\\Users\\EJ\\Desktop\\Eclipse\\Practice\\src\\test\\java\\utilities\\global.properties");
 		properties.load(io);
 		

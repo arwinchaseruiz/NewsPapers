@@ -65,5 +65,6 @@ WebDriverWait wait;
 		wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.visibilityOf(registeredLabel));
 		Assert.assertTrue(registeredLabel.getText().equalsIgnoreCase("Registered"));
+		System.out.println("User was logged in successfully");
 	}
 }

@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -68,4 +69,11 @@ loginPageFactory login;
 	{
 		login.user_sees_Homepage();
 	}
+	
+	@After
+	public void tearDown()
+	{
+		driver.quit();
+	}
+	
 }
